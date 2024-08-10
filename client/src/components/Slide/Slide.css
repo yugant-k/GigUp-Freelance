@@ -1,0 +1,51 @@
+/* Example CSS for styling arrows */
+.slick-prev {
+  left: 7px; /* Adjust the position of the previous arrow */
+  z-index: 1; /* Ensure arrows are above slides */
+}
+
+.slick-next {
+  right: 7px; /* Adjust the position of the next arrow */
+  z-index: 1; /* Ensure arrows are above slides */
+}
+
+/* Custom styles for the arrows */
+.slick-prev,
+.slick-next {
+  width: 50px; /* Adjust width of arrows */
+  height: 50px; /* Adjust height of arrows */
+  background-color: #fff; /* Arrow background color */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%; /* Make arrows circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Styles for the arrow icon or content */
+.slick-prev::before,
+.slick-next::before {
+  content: ''; /* Add custom content, like SVG or icon font */
+  color: #fff; /* Color of the arrow icon or content */
+}
+
+ /* the slides
+ .slick-slide {
+  margin: 0 27px;
+  border-radius: 10px;
+}
+
+/* the parent */
+/* .slick-list {
+  margin: 0 -27px;
+  overflow: hidden;
+}
+
+.slick-track{
+  overflow: hidden;
+}  */ 
+
